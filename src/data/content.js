@@ -102,34 +102,436 @@ export const testimonials = [
 
 export const pricing = [
   {
-    category: "Terapia blizn i ScarINK",
-    items: [
-      { name: "Konsultacja i ocena blizny", price: "od 120 zł" },
-      { name: "Terapia blizny (45 min)", price: "od 180 zł" },
-      { name: "ScarINK", price: "od 400 zł" },
-    ],
+    "category": "Konsultacja i kwasy",
+    "items": [
+      {
+        "name": "Konsultacja",
+        "price": "Bezpłatnie",
+        "duration": "30 min"
+      },
+      {
+        "name": "Kwasy Gen Factor",
+        "price": "250 zł",
+        "duration": "30 min"
+      }
+    ]
   },
   {
-    category: "Tropokolagen i regeneracja tkanki",
-    items: [
-      { name: "Zabieg z tropokolagenem", price: "od 250 zł" },
-      { name: "Seria 4 zabiegów", price: "od 900 zł" },
-    ],
+    "category": "Tropokolagen",
+    "items": [
+      {
+        "name": "Trudno gojące się rany / blizny",
+        "price": "300 zł",
+        "duration": "1 godz.",
+        "note": "każda kolejna ampułka: 100 zł"
+      },
+      {
+        "name": "Skóra głowy",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Rewitalizacja stref intymnych",
+        "price": "300 zł",
+        "duration": "1 godz.",
+        "sub": [
+          {
+            "name": "Mięśniówka zwieraczy",
+            "price": "700 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Srom + mięśniówka zwieraczy + wzgórek łonowy",
+            "price": "450 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Srom + mięśniówka zwieraczy",
+            "price": "300 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Srom",
+            "price": "wg wyceny",
+            "duration": "1 godz."
+          }
+        ]
+      },
+      {
+        "name": "Okolice oka",
+        "price": "300 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Twarz",
+        "price": "500 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Twarz + szyja",
+        "price": "650 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Twarz + szyja + dekolt",
+        "price": "800 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Blizny potrądzikowe",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Regeneracja skóry dłoni",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Zmiany skórne w okolicy sromu (liszaj twardzinowy)",
+        "price": "400 zł",
+        "duration": "1 godz.",
+        "note": "każda kolejna ampułka: 100 zł"
+      },
+      {
+        "name": "Rozstępy",
+        "price": "300 zł",
+        "duration": "1 godz.",
+        "note": "każda kolejna ampułka: 100 zł"
+      },
+      {
+        "name": "Wysiłkowe nietrzymanie moczu",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Regeneracja pochwy",
+        "price": "500 zł",
+        "duration": "1 godz."
+      }
+    ]
   },
   {
-    category: "Fizjoterapia uroginekologiczna",
-    items: [
-      { name: "Konsultacja uroginekologiczna", price: "od 200 zł" },
-      { name: "Wizyta terapeutyczna (50 min)", price: "od 220 zł" },
-    ],
+    "category": "Osocze bogatopłytkowe",
+    "items": [
+      {
+        "name": "Twarz",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Szyja + dekolt",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Twarz + szyja + dekolt",
+        "price": "700 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Skóra głowy",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Okolice oczu",
+        "price": "350 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Dłonie",
+        "price": "350 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Blizny / rozstępy / rany / przebarwienia",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Twarz – osocze + fibryna",
+        "price": "700 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Okolice intymne",
+        "price": "500 zł",
+        "duration": "1 godz."
+      }
+    ]
   },
   {
-    category: "Kosmetologia estetyczna (Gen Factor)",
-    items: [
-      { name: "Zabieg Gen Factor – twarz", price: "od 350 zł" },
-      { name: "Zabieg Gen Factor – twarz i szyja", price: "od 450 zł" },
-    ],
+    "category": "Fibryna",
+    "items": [
+      {
+        "name": "Okolice oczu",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Zmarszczki",
+        "price": "400 zł",
+        "duration": "1 godz.",
+        "note": "cena dotyczy jednej strefy"
+      },
+      {
+        "name": "Szyja / dekolt",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Dłonie",
+        "price": "400 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "Fibryna komórkowa + strukturalna",
+        "price": "700 zł",
+        "duration": "1 godz."
+      }
+    ]
   },
+  {
+    "category": "Mezoterapia mikroigłowa",
+    "items": [
+      {
+        "name": "Mezoterapia mikroigłowa",
+        "price": "300 zł",
+        "duration": "1 godz."
+      }
+    ]
+  },
+  {
+    "category": "ScarINK – mikropunktura",
+    "items": [
+      {
+        "name": "ScarINK – blizny",
+        "price": "400 zł",
+        "duration": "1 godz.",
+        "sub": [
+          {
+            "name": "Po przeszczepie włosów",
+            "price": "350 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Po cięciu cesarskim / usunięciu wyrostka / tarczycy",
+            "price": "350 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Po usuwaniu znamienia, brodawki, pieprzyka, po kolczyku itp.",
+            "price": "350 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Po rozszczepie wargi",
+            "price": "400 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "Po pęknięciu / nacięciu krocza",
+            "price": "400 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "Po plastyce piersi / mastektomii",
+            "price": "450 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "Po plastyce brzucha",
+            "price": "wg wyceny"
+          }
+        ]
+      },
+      {
+        "name": "ScarINK – po zabiegach i operacjach chirurgicznych",
+        "price": "400 zł",
+        "duration": "1 godz.",
+        "sub": [
+          {
+            "name": "Do 15 cm",
+            "price": "450 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "15–30 cm",
+            "price": "350 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Powyżej 30 cm",
+            "price": "wg wyceny"
+          }
+        ]
+      },
+      {
+        "name": "ScarINK – blizny pourazowe / po usunięciu tatuażu",
+        "price": "400 zł",
+        "duration": "1 godz.",
+        "sub": [
+          {
+            "name": "Do 20 cm²",
+            "price": "450 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "20–40 cm²",
+            "price": "500 zł",
+            "duration": "2 godz."
+          },
+          {
+            "name": "Powyżej 40 cm²",
+            "price": "wg wyceny"
+          }
+        ]
+      },
+      {
+        "name": "ScarINK – rozstępy",
+        "price": "450 zł",
+        "duration": "1 godz.",
+        "note": "z tropokolagenem igłą depozytową: +150 zł",
+        "sub": [
+          {
+            "name": "Plecy",
+            "price": "450 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Boczki",
+            "price": "450 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Ramiona",
+            "price": "450 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Brzuch",
+            "price": "450 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Piersi",
+            "price": "400 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Uda – jedna strefa (przód / tył / zewnętrzna / wewnętrzna strona)",
+            "price": "500 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "Uda – całe",
+            "price": "450 zł",
+            "duration": "1,5 godz."
+          },
+          {
+            "name": "Pośladki",
+            "price": "wg wyceny"
+          }
+        ]
+      },
+      {
+        "name": "ScarINK – blizny po trądziku / ospie",
+        "price": "350 zł",
+        "duration": "1 godz.",
+        "note": "z tropokolagenem igłą depozytową: +150 zł",
+        "sub": [
+          {
+            "name": "Twarz",
+            "price": "350 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Dekolt",
+            "price": "350 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Plecy",
+            "price": "450 zł",
+            "duration": "1,5 godz."
+          }
+        ]
+      },
+      {
+        "name": "ScarINK microlift",
+        "price": "300 zł",
+        "duration": "1 godz.",
+        "sub": [
+          {
+            "name": "Lifting skóry dekoltu",
+            "price": "400 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Lifting skóry piersi",
+            "price": "300 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Lifting skóry pośladków",
+            "price": "300 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Lifting skóry brzucha",
+            "price": "400 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "Lifting skóry twarzy (opracowanie zmarszczek)",
+            "price": "wg wyceny"
+          }
+        ]
+      },
+      {
+        "name": "ScarINK microlift + micropeel – twarz + dekolt",
+        "price": "600 zł",
+        "duration": "1 godz."
+      },
+      {
+        "name": "ScarINK micropeel – twarz + dekolt",
+        "price": "450 zł",
+        "duration": "1 godz."
+      }
+    ]
+  },
+  {
+    "category": "SQT biomikroigły",
+    "items": [
+      {
+        "name": "SQT biomikroigły",
+        "price": "550 zł",
+        "duration": "1 godz.",
+        "sub": [
+          {
+            "name": "SQT rewitalizujący",
+            "price": "500 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "SQT naprawczy",
+            "price": "500 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "SQT odżywczo-nawilżający",
+            "price": "600 zł",
+            "duration": "1 godz."
+          },
+          {
+            "name": "SQT odmładzający",
+            "price": "wg wyceny"
+          }
+        ]
+      }
+    ]
+  }
 ];
 
 export const contact = {

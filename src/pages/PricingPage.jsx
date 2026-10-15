@@ -7,7 +7,7 @@ export default function PricingPage() {
       <section className="page-hero">
         <div className="container">
           <h1>Cennik</h1>
-          <p>Orientacyjne ceny zabiegów i konsultacji.</p>
+          <p>Aktualny cennik zabiegów i konsultacji.</p>
         </div>
       </section>
 
@@ -17,15 +17,30 @@ export default function PricingPage() {
             <div key={group.category} className="price-block">
               <h3>{group.category}</h3>
               {group.items.map((it) => (
-                <div key={it.name} className="price-row">
-                  <span>{it.name}</span>
-                  <span>{it.price}</span>
+                <div key={it.name}>
+                  <div className="price-row">
+                    <span>
+                      {it.name}
+                      {it.duration && <small className="price-meta"> · {it.duration}</small>}
+                      {it.note && <small className="price-note">{it.note}</small>}
+                    </span>
+                    <span>{it.price}</span>
+                  </div>
+                  {it.sub?.map((sub) => (
+                    <div key={sub.name} className="price-row price-row--sub">
+                      <span>
+                        {sub.name}
+                        {sub.duration && <small className="price-meta"> · {sub.duration}</small>}
+                      </span>
+                      <span>{sub.price}</span>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
           ))}
           <p className="note">
-            Ceny są przykładowe i zostaną zaktualizowane. Ostateczny koszt ustalany jest podczas konsultacji.
+            Ceny pochodzą z systemu rezerwacji Booksy. Ostateczny koszt i zakres zabiegu ustalany jest podczas konsultacji.
           </p>
           <div className="center">
             <a href={contact.booksy} target="_blank" rel="noreferrer" className="btn btn--gold">Umów wizytę</a>

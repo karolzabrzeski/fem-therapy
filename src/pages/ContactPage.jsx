@@ -50,16 +50,6 @@ export default function ContactPage() {
               <label>Imię i nazwisko<input name="name" required /></label>
               <label>E-mail<input type="email" name="email" required /></label>
               <label>Telefon<input type="tel" name="phone" /></label>
-              <label>
-                Interesuje mnie
-                <select name="service" defaultValue="">
-                  <option value="" disabled>Wybierz usługę</option>
-                  {services.map((s) => (
-                    <option key={s.slug} value={s.slug}>{s.title}</option>
-                  ))}
-                  <option value="inne">Inne / konsultacja</option>
-                </select>
-              </label>
               <label>Wiadomość<textarea name="message" rows="4" /></label>
               <button className="btn btn--gold" type="submit">Wyślij wiadomość</button>
               {sent && <div className="form__ok">Dziękuję! Wiadomość została przyjęta (tryb demonstracyjny).</div>}

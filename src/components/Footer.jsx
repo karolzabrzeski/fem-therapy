@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__col">
-          <h4>Kontakt do kliniki:</h4>
+          <h4>Kontakt:</h4>
           <p>
             <PhoneIcon /> <a href={`tel:${contact.phone.replace(/\s/g, "")}`}>{contact.phone}</a>
           </p>
@@ -45,9 +45,10 @@ export default function Footer() {
         </div>
 
         <div className="footer__col footer__col--links">
+          <h4>Informacje:</h4>
           <Link to="/regulamin">Regulamin</Link>
           <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
-          <a className="btn btn--sage" href={contact.booksy} target="_blank" rel="noreferrer">
+          <a className="btn btn--gold" href={contact.booksy} target="_blank" rel="noreferrer">
             Rezerwacja Booksy
           </a>
         </div>

@@ -6,7 +6,7 @@ export default function AboutPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <h1>O mnie</h1>
+          <h1>O nas</h1>
           <p>Fizjoterapeutka i kosmetolog z pasją do holistycznej troski o ciało kobiety.</p>
         </div>
       </section>

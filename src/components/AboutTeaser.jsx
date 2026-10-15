@@ -12,7 +12,7 @@ export default function AboutTeaser() {
           loading="lazy"
         />
         <div>
-          <h2 className="section__title section__title--left">O mnie</h2>
+          <h2 className="section__title section__title--left">O nas</h2>
           <p>
             Nazywam się Marta Zabrzeska. Jestem fizjoterapeutką i kosmetologiem
             specjalizującą się w terapii blizn, uroginekologii oraz nowoczesnej
@@ -25,7 +25,7 @@ export default function AboutTeaser() {
             i rzetelne informacje. Każda terapia zaczyna się od dokładnej
             rozmowy i oceny, aby dobrać rozwiązanie, które naprawdę pomoże.
           </p>
-          <Link to="/o-mnie" className="btn btn--outline">
+          <Link to="/o-nas" className="btn btn--outline">
             Poznaj mnie bliżej
           </Link>
         </div>

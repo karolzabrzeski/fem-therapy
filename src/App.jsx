@@ -15,7 +15,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="o-mnie" element={<AboutPage />} />
+        <Route path="o-nas" element={<AboutPage />} />
         <Route path="oferta" element={<OfferPage />} />
         <Route path="oferta/:slug" element={<ServiceDetail />} />
         <Route path="galeria" element={<MetamorphosesPage />} />
