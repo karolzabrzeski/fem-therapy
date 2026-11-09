@@ -48,14 +48,15 @@ export default function Footer() {
           <h4>Informacje:</h4>
           <Link to="/regulamin">Regulamin</Link>
           <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
+          <Link to="/polityka-cookies">Polityka Cookies</Link>
           <a className="btn btn--gold" href={contact.booksy} target="_blank" rel="noreferrer">
             Rezerwacja Booksy
           </a>
         </div>
       </div>
       <div className="footer__bottom">
-        <img className="footer__logo" src="/logo.svg" alt="Fem Therapy – Marta Zabrzeska" width="72" height="72" />
-        © {new Date().getFullYear()} Fem Therapy – Marta Zabrzeska
+        <img className="footer__logo" src="/logo.svg" alt="Fem Therapy – Marta i Mariusz Zabrzescy" width="72" height="72" />
+        © {new Date().getFullYear()} Fem Therapy – Marta i Mariusz Zabrzescy
       </div>
     </footer>
   );

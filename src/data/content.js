@@ -5,10 +5,48 @@ const img = (seed, w, h) => `https://picsum.photos/seed/${seed}/${w}/${h}`;
 
 export const images = {
   hero: img("femtherapy-hero", 1200, 800),
-  portrait: img("femtherapy-marta", 600, 700),
+  marta: img("femtherapy-marta", 600, 700),
+  mariusz: "/images/mariusz.jpg",
   gabinet1: img("femtherapy-gabinet1", 800, 600),
   gabinet2: img("femtherapy-gabinet2", 800, 600),
 };
+
+// Opisy osób są przykładowe – do podmiany na właściwe.
+export const team = [
+  {
+    name: "Marta Zabrzeska",
+    role: "Fizjoterapeutka i kosmetolog",
+    image: images.marta,
+    short:
+      "Specjalizuje się w terapii blizn, fizjoterapii uroginekologicznej i nowoczesnej kosmetologii estetycznej. Łączy wiedzę medyczną z wrażliwością na potrzeby kobiet.",
+    long: [
+      "Jestem fizjoterapeutką i kosmetologiem. Specjalizuję się w terapii blizn, fizjoterapii uroginekologicznej oraz nowoczesnych zabiegach regeneracyjnych i estetycznych. Fem Therapy to miejsce stworzone z myślą o kobietach, które szukają profesjonalnej, a jednocześnie ciepłej i dyskretnej opieki.",
+      "Stale się szkolę i korzystam ze sprawdzonych, nowoczesnych metod. Każdą wizytę zaczynam od rozmowy – dopiero wtedy dobieram terapię dopasowaną do Twoich potrzeb.",
+    ],
+    points: [
+      "Terapia blizn i ScarINK",
+      "Fizjoterapia uroginekologiczna",
+      "Zabiegi regeneracyjne i estetyczne",
+    ],
+  },
+  {
+    name: "Mariusz Zabrzeski",
+    role: "Fizjoterapeuta",
+    image: images.mariusz,
+    imagePosition: "38% 35%",
+    short:
+      "Zajmuje się terapią manualną, rehabilitacją pozabiegową oraz zabiegami z wykorzystaniem osocza i fibryny. Stawia na rzetelną diagnozę i spokojną współpracę z pacjentem.",
+    long: [
+      "Jestem fizjoterapeutą. Zajmuję się terapią manualną, rehabilitacją po zabiegach operacyjnych oraz zabiegami regeneracyjnymi z wykorzystaniem osocza bogatopłytkowego i fibryny. W Fem Therapy wspieram pacjentów na każdym etapie powrotu do sprawności.",
+      "Wierzę w dokładny wywiad, jasne tłumaczenie każdego etapu terapii i plan dopasowany do możliwości pacjenta. Regularnie poszerzam wiedzę na szkoleniach i kursach specjalistycznych.",
+    ],
+    points: [
+      "Terapia manualna i rehabilitacja pozabiegowa",
+      "Zabiegi z osoczem i fibryną",
+      "Indywidualny plan terapii",
+    ],
+  },
+];
 
 export const services = [
   {
@@ -535,15 +573,15 @@ export const pricing = [
 ];
 
 export const contact = {
-  address: "ul. Lwowska 114/11, Rzeszów",
-  phone: "+33 339 3820",
-  email: "info@femcherapylny.pl",
+  address: "ul. Lwowska 114/11, 35-301 Rzeszów",
+  phone: "+48 667 023 168",
+  email: "femtherapyrzeszow@gmail.com",
   booksy: "https://booksy.com/pl-pl/235545_fem-therapy-marta-zabrzeska_medycyna-estetyczna_10729_rzeszow#ba_s=sh_1",
-  instagram: "https://instagram.com/",
-  facebook: "https://facebook.com/",
+  instagram: "https://www.instagram.com/femtherapy.martazabrzeska/",
+  facebook: "https://www.facebook.com/people/Fem-Therapy-Marta-Zabrzeska/61557704197715/",
   hours: [
-    ["Poniedziałek – piątek", "9:00 – 18:00"],
-    ["Sobota", "9:00 – 13:00"],
+    ["Poniedziałek – piątek", "10:00 – 19:00"],
+    ["Sobota", "10:00 – 19:00"],
     ["Niedziela", "nieczynne"],
-  ],
+  ],  
 };

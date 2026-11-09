@@ -8,6 +8,7 @@ import MetamorphosesPage from "./pages/MetamorphosesPage.jsx";
 import PricingPage from "./pages/PricingPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import LegalPage from "./pages/LegalPage.jsx";
+import CookiesPage from "./pages/CookiesPage.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           path="polityka-prywatnosci"
           element={<LegalPage kind="polityka" />}
         />
+        <Route path="polityka-cookies" element={<CookiesPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
